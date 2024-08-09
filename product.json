@@ -1,0 +1,473 @@
+[
+  {
+    "model": "apps.product",
+    "pk": 1,
+    "fields": {
+      "name": "Samsung S23 ultra@",
+      "author": 1,
+      "price": 1500,
+      "shipping_cost": 50,
+      "discount": 50,
+      "stock": true,
+      "quantity": 140,
+      "properties": {
+        "Xolati": "Yangi",
+        "Kafolati": "10 yil",
+        "Kamerasi": "512 MP",
+        "Xotirasi": "1TB",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Telefonni yomoni lekin ishlatib mazza qilasiz !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:42:23.689Z",
+      "created_at": "2024-06-21T09:43:11.114Z",
+      "tags": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 2,
+    "fields": {
+      "name": "IPhone 15 PRO MAX",
+      "author": 1,
+      "price": 50000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Xolati": "Yangi",
+        "Kafolati": "10 yil",
+        "Kamerasi": "512 MP",
+        "Xotirasi": "1TB",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Telefonni yomoni lekin ishlatib mazza qilasiz !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.579Z",
+      "created_at": "2024-06-21T10:16:56.413Z",
+      "tags": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 3,
+    "fields": {
+      "name": "Malibu",
+      "author": 1,
+      "price": 40000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><strong>Malibu chegirmadan unumliy foydalaning va oila azolaringizni malibuda yurishiga sababchi bo'ling yesa temasa bosaverish kerak !!!</strong></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.587Z",
+      "created_at": "2024-06-21T10:16:06.920Z",
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 4,
+    "fields": {
+      "name": "Lasetti",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>No comment!!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.593Z",
+      "created_at": "2024-06-21T10:14:44.751Z",
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 5,
+    "fields": {
+      "name": "Gentra",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Xolati": "Yangi",
+        "Kafolati": "10 yil",
+        "Kamerasi": "512 MP",
+        "Xotirasi": "1TB",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Telefonni yomoni lekin ishlatib mazza qilasiz !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.600Z",
+      "created_at": "2024-06-21T10:14:12.717Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 6,
+    "fields": {
+      "name": "TAHOE",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Telefonni yomoni lekin ishlatib mazza qilasiz !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.607Z",
+      "created_at": "2024-06-21T10:13:53.547Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 7,
+    "fields": {
+      "name": "ECEINOX",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Mashinaning zo'ri !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.613Z",
+      "created_at": "2024-06-21T10:13:30.580Z",
+      "tags": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 8,
+    "fields": {
+      "name": "Trailblazer",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Xolati": "Yangi",
+        "Kafolati": "10 yil",
+        "Kamerasi": "512 MP",
+        "Xotirasi": "1TB",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Telefonni yomoni lekin ishlatib mazza qilasiz !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.619Z",
+      "created_at": "2024-06-21T10:12:42.565Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 9,
+    "fields": {
+      "name": "Prado",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Prado bunga tarif shart emas buning o'zi tarif !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.628Z",
+      "created_at": "2024-06-21T10:12:21.998Z",
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 10,
+    "fields": {
+      "name": "HAMMER",
+      "author": 1,
+      "price": 10000000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Mingan sari yashaging kelar deb nomalnadigan moshinalarimizdan HUMMER 'BOLG'A SAN BOL'GA' !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.635Z",
+      "created_at": "2024-06-21T10:09:53.646Z",
+      "tags": [
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 11,
+    "fields": {
+      "name": "Tiko",
+      "author": 1,
+      "price": 1000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Borishi o'zidan qimmat bo'lgan yana bitta moshinalarimiz turkumidan !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.642Z",
+      "created_at": "2024-06-21T10:08:09.596Z",
+      "tags": [
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 12,
+    "fields": {
+      "name": "Elentra",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Hunday kompaniyasidan yana bitttta shedevr!!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.648Z",
+      "created_at": "2024-06-21T10:06:27.135Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 13,
+    "fields": {
+      "name": "Jiguli",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Zapchastga olsangiz yutasiz ishanavering haydasangiz ham bo'ladi lekin bu ham moshina !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.653Z",
+      "created_at": "2024-06-21T10:04:51.112Z",
+      "tags": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 14,
+    "fields": {
+      "name": "Japaroj",
+      "author": 1,
+      "price": 100,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<pre><code class=\"language-plaintext\">Ko'rganingizdan yetkazish o'zidan qimmat avtomobillarimiz hozir shunaqa bo'lib qolgan ha azizlar umr o'tmoqda!!!</code></pre>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.659Z",
+      "created_at": "2024-06-21T10:03:10.219Z",
+      "tags": [
+        7
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 15,
+    "fields": {
+      "name": "Nexia",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<pre><code class=\"language-plaintext\">Nexia mana nechcha yildirki o'z o'rnini yo'qatmagan nexia avtomobillarimiz chunki boshqa yo'qda !!!</code></pre>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.663Z",
+      "created_at": "2024-06-21T10:00:49.874Z",
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 16,
+    "fields": {
+      "name": "Spark",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Shahar ichida yurishga qulay va ixccham bo'lgan spark avtomobillarimiz siz uchun !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.669Z",
+      "created_at": "2024-06-21T09:58:39.228Z",
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 17,
+    "fields": {
+      "name": "Lexus",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Lexus evropadan olib kelingan holati yaxshi 100 000 km yurgan !!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.675Z",
+      "created_at": "2024-06-21T09:53:59.670Z",
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 18,
+    "fields": {
+      "name": "Captiva",
+      "author": 1,
+      "price": 100000,
+      "shipping_cost": 500,
+      "discount": 15,
+      "stock": true,
+      "quantity": 240,
+      "properties": {
+        "Mator": "2.6",
+        "Xolati": "Yangi",
+        "Kafolati": "20yil",
+        "Ishlab chiqarilgan sanasi": "2024-12-12"
+      },
+      "description": "<h2><span style=\"font-family:'Courier New', Courier, monospace;\"><strong>Chevrolet kompaniyasing evro bozorlari bilan raqobat qilaoladigan Captiva avtomobili!!!</strong></span></h2>",
+      "category": 1,
+      "updated_at": "2024-06-21T09:44:57.680Z",
+      "created_at": "2024-06-21T09:52:15.315Z",
+      "tags": [
+        1
+      ]
+    }
+  }
+]

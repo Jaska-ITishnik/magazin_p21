@@ -1,0 +1,35 @@
+0. product-list.html ni togrilash ✅
+1. static(css, js, images) fayllarni togrilash ✅
+2. asosiy papkani rootga ozgartirish ✅
+3. base.html ajratish ✅
+4. modellarni yozish
+productni kop rasmli qilish, productni description fieldiga ckeditor ishlatish
+product da discount(chegirma %)
+product da author bolishi kk
+quantity (bazadagi mahsulotni soni)
+
+category ni mptt dan foydalanish ✅
+tag ham qoshish kk ✅
+5. postgres db ulash kk
+ozimizni ismimiz bilan user ochib, root nomli db ochamiz paroli 1 bolsin✅
+
+6. product listda NEW nomli badge chiqsin agar tovar qoshilganga 7kundan oshmagan bolsa
+
+7. login(email, password), register(pochtaga verification link yuboramiz + celery qoshish kk (brokerga rabbitmq))
+8. settings.html togrilash, rasm va malumotlarni update qiladigan qilish
+9. rasmlarni minioda saqlidigan qilamiz
+10. product listda pagination qilish
+11. add to cart product detail dagi bosganda shopping-cart.html shopping cart ga qoshish kk
+12. modellarni yozish (Order, OrderItem, Cart) ✅
+13. region, district va country ni fixtures qilib qoshish kk va makefilega cmd qoshish kk
+14.. userga phone qoshish (login da phone orqali yoki email orqali)
+15. telegram orqali kirish
+16. README.md faylga saytda ishlatilgan texnologiyalarni yozib va
+saytda nimalar borligini yozib screenshot qilib qoyamiz, github ga yuklanadi
+17. ckeditorni file storage ni minio ga qaratish kk
+18. register qismida, phone bolsa, 1minutlik[cache ga expire qilib saqlanadi] 6xonali kod yuboradi(ekranga print qilinadi) 7-taskga qarang
+19. adminkada product list page da, productga tegishli imagelar soni va oxirida
+20. category ni 3talik ichma ich qilish va category ga icon qoshish kk (icon code yoki icon ozi[rasm holatda])
+21.
+
+

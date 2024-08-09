@@ -1,0 +1,37 @@
+<div class="row">
+        <div class="col-12">
+            <div class="card mb-3 btn-reveal-trigger">
+                <div class="card-header position-relative min-vh-25 mb-8">
+                    <form action="">
+                        <div class="cover-image">
+                            <div class="bg-holder rounded-3 rounded-bottom-0"
+                                 style="background-image:url({{ user.backgroun_image.url }});">
+                            </div>
+                            <!--/.bg-holder-->
+
+                            <input class="d-none" id="upload-cover-image" name="backgroun_image" type="file"/>
+                            <label class="cover-image-file-input" for="upload-cover-image">
+                                <span class="fas fa-camera me-2"></span>
+                                <span type="submit">Change cover photo</span>
+                            </label>
+                        </div>
+                    </form>
+                    <form action="{% url 'user_update_photo_page' %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="avatar avatar-5xl avatar-profile shadow-sm img-thumbnail rounded-circle">
+                            <div class="h-100 w-100 rounded-circle overflow-hidden position-relative">
+                                <img src="{{ user.photo.url }}" width="200"
+                                     data-dz-thumbnail="data-dz-thumbnail"/>
+                            </div>
+                            <div style="display: inline-flex;">
+                                <input id="profile-image" name="photo" type="file"/>
+                                <button style="margin-left: 42px;margin-top: 10px;background-color: #0b1727;border: #0a1727;color: white"
+                                        type="submit">Update
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

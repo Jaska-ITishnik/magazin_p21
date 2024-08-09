@@ -1,0 +1,193 @@
+{% load static %}
+
+<div class="navbar-vertical-content scrollbar">
+    <ul class="navbar-nav flex-column mb-3" id="navbarVerticalNav">
+        <li class="nav-item">
+            <a class="nav-link dropdown-indicator" href="#dashboard" role="button" data-bs-toggle="collapse"
+               aria-expanded="true" aria-controls="dashboard">
+                <div class="d-flex align-items-center">
+                    <span class="nav-link-icon">
+                        <span class="fas fa-chart-pie"></span>
+                    </span>
+                    <span class="nav-link-text ps-1">Dashboard</span>
+                </div>
+            </a>
+            <ul class="nav collapse show" id="dashboard">
+                <li class="nav-item"><a class="nav-link active" href="index.html" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-text ps-1">Default</span>
+                    </div>
+                </a>
+                    <!-- more inner pages-->
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <!-- label-->
+            <div class="row navbar-vertical-label-wrapper mt-3 mb-2">
+                <div class="col-auto navbar-vertical-label">
+                    Categories
+                </div>
+                <div class="col ps-0">
+                    <hr class="mb-0 navbar-vertical-divider"/>
+                </div>
+            </div>
+            {% for category in categories %}
+                <a class="nav-link {% if category.children.exists %}dropdown-indicator{% endif %}"
+                   href="#{{ category.slug }}" role="button" aria-expanded="false"
+                   {% if category.children.exists %}data-bs-toggle="collapse"{% endif %}>
+                    <div class="d-flex align-items-center">
+                    <span class="nav-link-icon">
+                        <span class="fas fa-comments"></span>
+                    </span>
+                        <span class="nav-link-text ps-1">{{ category.name }}</span>
+                    </div>
+                </a>
+                {% if category.children.exists %}
+                    <ul class="nav collapse false" id="{{ category.slug }}">
+                        {% for subcategory in category.children.all %}
+                            <li class="nav-item">
+                                <a class="nav-link {% if subcategory.children.exists %}dropdown-indicator{% endif %}"
+                                   href="#{{ subcategory.slug }}" role="button" aria-expanded="false"
+                                   {% if subcategory.children.exists %}data-bs-toggle="collapse"{% endif %}>
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text ps-1">{{ subcategory.name }}</span>
+                                    </div>
+                                </a>
+                                {% if subcategory.children.exists %}
+                                    <ul class="nav collapse false" id="{{ subcategory.slug }}">
+                                        {% for innercategory in subcategory.children.all %}
+                                            <li class="nav-item">
+                                                <a class="nav-link {% if innercategory.children.exists %}dropdown-indicator{% endif %}"
+                                                   href="#{{ innercategory.slug }}" role="button" aria-expanded="false"
+                                                   {% if innercategory.children.exists %}data-bs-toggle="collapse"{% endif %}>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="nav-link-text ps-1">{{ innercategory.name }}</span>
+                                                    </div>
+                                                </a>
+                                                <!-- more inner pages-->
+                                            </li>
+
+                                            {% if innercategory.children.exists %}
+                                                <ul class="nav collapse false" id="{{ innercategory.slug }}">
+                                                    {% for deepcategory in innercategory.children.all %}
+                                                        <li class="nav-item">
+                                                            <a class="nav-link {% if deepcategory.children.exists %}dropdown-indicator{% endif %}"
+                                                               href="#{{ deepcategory.slug }}" role="button"
+                                                               aria-expanded="false"
+                                                               {% if deepcategory.children.exists %}data-bs-toggle="collapse"{% endif %}>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="nav-link-text ps-1">{{ deepcategory.name }}</span>
+                                                                </div>
+                                                            </a>
+                                                            <!-- more inner pages-->
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                <!-- more inner pages-->
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
+            <!-- parent pages-->
+            <ul class="nav collapse false" id="e-commerce">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-indicator" href="#product" data-bs-toggle="collapse"
+                       aria-expanded="false"
+                       aria-controls="e-commerce">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-text ps-1">Product</span>
+                        </div>
+                    </a>
+                    <!-- more inner pages-->
+                    <ul class="nav collapse false" id="product">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'product_list_page' %}" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">Product list</span>
+                                </div>
+                            </a>
+                            <!-- more inner pages-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/e-commerce/product/product-grid.html" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">Product grid</span>
+                                </div>
+                            </a>
+                            <!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="app/e-commerce/product/product-details.html"
+                                                aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-text ps-1">Product details</span>
+                            </div>
+                        </a>
+                            <!-- more inner pages-->
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#orders" data-bs-toggle="collapse"
+                                        aria-expanded="false"
+                                        aria-controls="e-commerce">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-text ps-1">Orders</span>
+                    </div>
+                </a>
+                    <!-- more inner pages-->
+                    <ul class="nav collapse false" id="orders">
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/e-commerce/orders/order-list.html" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">Order list</span>
+                                </div>
+                            </a>
+                            <!-- more inner pages-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/e-commerce/orders/order-details.html" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">Order details</span>
+                                </div>
+                            </a>
+                            <!-- more inner pages-->
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="app/e-commerce/customers.html" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-text ps-1">Customers</span>
+                        </div>
+                    </a>
+                    <!-- more inner pages-->
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="settings mb-3">
+        <div class="card alert p-0 shadow-none" role="alert">
+            <div class="btn-close-falcon-container">
+                <div class="btn-close-falcon" aria-label="Close" data-bs-dismiss="alert"></div>
+            </div>
+            <div class="card-body text-center">
+                <img src="assets/img/icons/spot-illustrations/navbar-vertical.png" alt="" width="80"/>
+                <p class="fs--2 mt-2">Loving what you see? <br/>Get your copy of
+                    <a href="#!">Falcon</a>
+                </p>
+                <div class="d-grid">
+                    <a class="btn btn-sm btn-purchase"
+                       href="https://themes.getbootstrap.com/product/falcon-admin-dashboard-webapp-template/"
+                       target="_blank">Purchase
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
