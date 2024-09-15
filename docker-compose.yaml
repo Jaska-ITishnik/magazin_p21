@@ -1,0 +1,34 @@
+services:
+  magazin_backend_service:
+    build: .
+    ports:
+      - '8000:8000'
+    depends_on:
+      - postgres_service
+
+
+
+  postgres_service:
+    image: postgres:alpine
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_HOST=postgres_service
+      - POSTGRES_PORT=5432
+      - POSTGRES_PASSWORD=100
+    ports:
+      - 5432:${PG_PORT}
+    volumes:
+      - magazin_p21_pg_data:/var/lib/postgresql/data
+
+
+  rabbitmq_service:
+    image: rabbitmq:alpine
+    ports:
+      - '5672:5672'
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq/data
+
+volumes:
+  magazin_p21_pg_data: { }
+  rabbitmq_data: { }

@@ -20,10 +20,10 @@ from apps.tokens import account_activation_token
 # class MainTemplateView(LoginRequiredMixin, TemplateView):
 #     template_name = 'apps/dashboard/main.html'
 
-    # def get_context_data(self, *, object_list=None, **kwargs):
-    #     ctx = super().get_context_data(object_list=object_list, **kwargs)
-    #     ctx['categories'] = Category.objects.all()
-    #     return ctx
+# def get_context_data(self, *, object_list=None, **kwargs):
+#     ctx = super().get_context_data(object_list=object_list, **kwargs)
+#     ctx['categories'] = Category.objects.all()
+#     return ctx
 
 
 class ProductListView(LoginRequiredMixin, ListView):

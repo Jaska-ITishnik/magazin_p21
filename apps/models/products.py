@@ -1,4 +1,3 @@
-import random
 import string
 
 from django.core.validators import FileExtensionValidator

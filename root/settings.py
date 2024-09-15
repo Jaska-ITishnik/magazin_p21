@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv('.env')
-SECRET_KEY = os.getenv('SECRET_KEY')
+# load_dotenv('../.env')
+SECRET_KEY = 'django-insecure-74ztb9e(be&ji&@03l%%+5ks5rtb^5cf61q0_$$nbr+x%540lg'
 
 DEBUG = True
 
@@ -67,10 +67,20 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '100',
         'HOST': 'localhost',
-        'PORT': 5432
-
+        'PORT': '5432'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.getenv('PG_NAME'),
+#         'USER': os.getenv('PG_USER'),
+#         'PASSWORD': os.getenv('PG_PASSWORD'),
+#         'HOST': os.getenv('PG_HOST'),
+#         'PORT': os.getenv('PG_PORT')
+#     }
+# }
 
 AUTH_PASSWORD_VALIDATORS = [
     # {
@@ -110,7 +120,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'jasurbekbekmirzayev2004@gmail.com'
 EMAIL_HOST_PASSWORD = 'ubxs zcvw vzxv bweh'
 
-CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+CELERY_BROKER_URL = 'amqp://guest:guest@rabbitmq_service:5672//'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
